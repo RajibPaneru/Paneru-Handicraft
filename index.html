@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Paneru Handicraft, your one-stop shop for exquisite handmade crafts.">
+    <title>Paneru Handicraft</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Paneru Handicraft</h1>
+        <p>Your one-stop shop for exquisite handmade crafts.</p>
+    </header>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="about">
+            <img class="image" src="Handicraft.jpg" alt="Paneru Handicraft">
+            <p class="about-text" >We are PANERU HANDICRAFT , the authorized leading manufacturer, wholesaler, and exporter of the best handicraft products from Nepal located at Chaksibari Marg, JP road, Thamel, Kathmandu, Nepal. We are one of the best names in the handicraft manufacturing industry in Nepal, providing you with the best handicraft products, including garment products, felt products, hemp products, pashmina, and many more handicraft products. With the increasing demand for Nepal’s handicraft products worldwide, we are constantly at your service to bring forth the finest handmade product.
+                Paneru Handicraft P. Ltd. has plenty of experience collecting the finest raw materials, processing them, and giving the best product results. Having been in the handicraft industry for more than a decade, the quality and durability of the products are the finest. The magnificent talent of gifted artisans from remote parts of Nepal has received proper value and recognition.</p>
+        </div>
+    </section>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="1.jpg" alt="1">
+                <h3>Dream Catcher -Bamboo and Peacock Feathers Decorations for Car Bedroom-Diameter 7" Length 23.6"-25.6"</h3>
+                <p>Price: Rs.2,500</p>
+            </div>
+            <div class="product">
+                <img src="2.jpg" alt="2">
+                <h3>Hemp Bag size: 36 cm x 29 cm x 10 cm (H x L x W) 50% hemp+50% cotton</h3>
+                <p>Price: Rs.1500</p>
+            </div>
+            <div class="product">
+                <img src="3.jpg" alt="3">
+                <h3>Size: 36 cm x 29 cm x 10 cm (H x L x W)
+                    Material: 50% Hemp, 25% Leather and 25% Cotton
+                    Compartment: Front zipper, Main Zipper and Laptop space
+                    Handmade In Nepal</h3>
+                <p>Price : Rs.2000</p>
+            </div>
+            <div class="product">
+                <img src="4.jpg" alt="4">
+                <h3>Nepali Sarangi</h3>
+                <p>Price: Rs.3,000</p>
+            </div>
+            <div class="product">
+                <img src="5.jpg" alt="5">
+                <h3>All Face Rudraksha Mala</h3>
+                <p>Price: Rs.2,000</p>
+            </div>
+            <div class="product">
+                <img src="6.jpg" alt="6">
+                <h3>9″ Wall Hanging Metal Crown Buddha Mask</h3>
+                <p>Price: Rs.5,000</p>
+            </div>
+            <div class="product">
+                <img src="7.jpg" alt="7">
+                <h3>Braclets</h3>
+                <p>Price: Rs.250</p>
+            </div>
+            <div class="product">
+                <img src="8.jpg" alt="8">
+                <h3>ShivaRatna 4 Mukhi Rudraksha (Nepal) + 2 Beads of Sphatik Made in 5 Mukhi Rudraksha Mala (Total Beads 108+1 Lab Certified)</h3>
+                <p>Price: Rs.2,500</p>
+            </div>
+            <div class="product">
+                <img src="9.jpg" alt="9">
+                <h3>5 inches Handmade Full Moon Singing Bowl </h3>
+                <p>Prics: Rs.2,500</p>
+            </div>
+            <div class="product">
+                <img src="10.jpg" alt="10">
+                <h3>Tara Thangka Painting (60 x 44cm)</h3>
+                <p>Prics: Rs.5,000</p>
+            </div>
+            <div class="product">
+                <img src="11.jpg" alt="11">
+                <h3>Green Tara Thangka Painting (60 x 44cm)</h3>
+                <p>Prics: Rs.10,000</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p><strong>Email:</strong> <a>paneruhandicrafts@gmail.com</a></p>
+                <p><strong>Phone:</strong> <a ">+977 984-9833005</a></p>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+    
+                    <button type="button" onclick="sendMessage()">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .contact-info {
+            width: 40%;
+            background: #f8f8f8;
+            padding: 1rem;
+            border-radius: 4px;
+        }
+        .contact-info h3 {
+            margin-bottom: 0.5rem;
+        }
+        .contact-info p {
+            margin: 0.5rem 0;
+        }
+        .contact-form {
+            width: 55%;
+        }
+    </style>
+
+    <footer>
+        <p>&copy; Crafted by Rajib Paneru. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function sendMessage() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (name && email && message) {
+                alert(`Thank you, ${name}! Your message has been sent.`);
+                document.getElementById('contactForm').reset();
+            } else {
+                alert('Please fill out all fields before sending.');
+            }
+        }
+    </script>
+</body>
+</html>
